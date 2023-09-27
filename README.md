@@ -26,10 +26,17 @@ npm install --save capacitor-voice-recorder
 npx cap sync
 ```
 
-#### ios note
+#### Permissions
 
+**For iOS:**
 Make sure to include the ```NSMicrophoneUsageDescription```
 key, and a corresponding purpose string in your app's Info.plist
+
+**For Android:**
+The following permission should be added to your AndroidManifest.xml:
+```xml
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+```
 
 ## Configuration
 
